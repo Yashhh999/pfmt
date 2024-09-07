@@ -5,6 +5,7 @@ import { NextResponse } from "next/server";
 export async function GET(req){
     try{
         await connect();
+        
         const email = req.nextUrl.searchParams.get('email');
         if(!email){
             return NextResponse.json({message:"Unauthorized"},{status:401});

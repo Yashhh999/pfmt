@@ -13,6 +13,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        boxbg: '#1C212B',
+      },
     },
   },
   plugins: [
@@ -20,7 +23,7 @@ const config: Config = {
   ],
   daisyui:{
     themes:[
-      "dark",
+      "dim",
     ]
   }
 };
